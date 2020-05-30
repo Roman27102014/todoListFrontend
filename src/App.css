@@ -1,0 +1,24 @@
+.App {
+  width: 100%;
+  max-width: 631px;;
+  margin: auto;
+}
+
+.title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  color: #000000;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.titleBlock {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
