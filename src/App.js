@@ -60,7 +60,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="title">Какие планы на день?</h1>
-        <h2 className="titleBlock">Задачи</h2>
+        <h2 className="titleBlock">Как дела, Алексей?</h2>
         <div className="tasks">
           <AddTask addTask={this.state.value} onSendNewTask={this.onSendNewTask} onChangeValue={this.onChangeValue} />
           <TaskHeader onChange={this.onChangeFilter}/>
