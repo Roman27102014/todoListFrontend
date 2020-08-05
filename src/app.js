@@ -93,7 +93,6 @@ const App = function () {
   const [value, setValue] = useState("");
   const [currentItem, setCurrentItem] = useState(null);
   const list = filterTodo(todoItems, filter);
-  const [completed, setCompleted] = useState(false);
 
   console.log("124", list);
   useEffect(() => {
@@ -108,25 +107,19 @@ const App = function () {
       });
   }, []);
 
-  const handleChange = (event) => {
-    setCompleted({
-      ...completed,
-      [event.target.completed]: !event.target.completed,
+  const handleChange = (id) => {
+    const newTodoitems = todoItems.map((item) => {
+      if (item.id === id) {
+        return {
+          id,
+          description: item.description,
+          completed: !item.completed,
+        };
+      }
+      return item;
     });
+    setTodoItems(newTodoitems);
   };
-
-  // const handleChange = (id) => {
-  //   const newTodoitems = todoItems.map((item) => {
-  //     if (item.id === id) {
-  //       return {
-  //         id,
-  //         description: item.description,
-  //         completed: !item.completed,
-  //       };
-  //     }
-  //     return item;
-  //   });
-  //   setTodoItems(newTodoitems);
 
   // const handleRemove = (id) => {
   //   const newTodoItems = [];
@@ -230,5 +223,4 @@ const App = function () {
     </div>
   );
 };
-
 export default App;
