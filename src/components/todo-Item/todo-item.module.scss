@@ -1,0 +1,22 @@
+.TodoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.DescriptionWrapper {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.Remove {
+  width: "10";
+  height: "10";
+  background: "white";
+}
